@@ -71,5 +71,5 @@ available on most modern operating systems and display types. It is not expected
 to add much entropy for fingerprinting.
 
 As access to this API is gated by the async `requestMediaKeySystemAccess()` which 
-may require user content, the HDCP privacy concerns are the same as the 
+may require user consent, the HDCP privacy concerns are the same as the 
 [EME ones](https://w3c.github.io/encrypted-media/#privacy).
