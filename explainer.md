@@ -80,7 +80,7 @@ video.mediaKeys.getStatusForPolicy({
   }
 });
 ```
-be
+
 
 ## Privacy Considerations
 
