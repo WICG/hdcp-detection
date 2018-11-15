@@ -52,12 +52,26 @@ partial interface MediaKeys {
 }
 ```
 
+The HDCP versions will be kept in a registry. The initial list will contain:
+```
+ - 1.0
+ - 1.1
+ - 1.2
+ - 1.3
+ - 1.4
+ - 2.0
+ - 2.1
+ - 2.2
+ - 2.3
+
+```
+
 
 ## Examples
 
 ```js
 video.mediaKeys.getStatusForPolicy({
-  minHdcpVersion: 'hdcp-1.0'
+  minHdcpVersion: '1.0'
 }).then(status => {
   if (status === 'usable') {
     // Pre-fetch HD content.
@@ -66,7 +80,7 @@ video.mediaKeys.getStatusForPolicy({
   }
 });
 ```
-
+be
 
 ## Privacy Considerations
 
