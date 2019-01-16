@@ -66,8 +66,8 @@ spec: encrypted-media; for: EME; urlPrefix: https://www.w3.org/TR/encrypted-medi
 
     <p>
       A <a>policy requirement</a> is said to be <dfn>fulfilled</dfn> if the
-      system match the requirements. The exact requirements to match each
-      <a>policy requirement</a> is defined below.
+      system matches the requirements. The exact requirements to match each
+      <a>policy requirement</a> are defined below.
     </p>
   </section>
 
@@ -167,11 +167,10 @@ spec: encrypted-media; for: EME; urlPrefix: https://www.w3.org/TR/encrypted-medi
       </p>
 
       <p>
-        The information added by this API, regardless of it already be
-        accessible via other ways does not increase the entropy for
+        The information added by this API, regardless of whether or not it is
+        accessible in other ways does not increase the entropy for
         fingerprinting much as HDCP is widely available on most operating
-        systems and displays. The difference will lie on the edges that will
-        likely correlate with other differences.
+        systems and displays.
       </p>
     </section>
 
@@ -184,7 +183,7 @@ spec: encrypted-media; for: EME; urlPrefix: https://www.w3.org/TR/encrypted-medi
         The fingerprinting concerns are mitigated by the fact that the API is
         only accessible after <code>requestMediaKeySystemAccess()</code> was
         called which may require user consent. UAs that would require user
-        consent in order to access the CDM will therofer require user consent
+        consent in order to access the CDM will therefore require user consent
         to access this API.
       </p>
   </section>
