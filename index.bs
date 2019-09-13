@@ -7,7 +7,7 @@ Shortname: hdcp-detection
 Level: 1
 Group: wicg
 Editor: Mounir Lamouri, w3cid 45389, Google Inc. https://google.com/
-Editor: Joey Parrish, Google Inc. https://google.com/
+Editor: Joey Parrish, w3cid 105371, Google Inc. https://google.com/
 
 Abstract: This specification intends to provide an extension to the W3C
 Abstract: Encrypted Media Extension specification. The API will allow authors
