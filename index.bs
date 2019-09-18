@@ -194,15 +194,15 @@ spec: encrypted-media; for: EME; urlPrefix: https://www.w3.org/TR/encrypted-medi
 
   <div class="example" highlight="javascript">
     <pre>
-      video.mediaKeys.getStatusForPolicy({
+      const status = await video.mediaKeys.getStatusForPolicy({
         minHdcpVersion: '1.0'
-      }).then(status => {
-        if (status === 'usable') {
-          // Pre-fetch HD content.
-        } else {  // such as 'output-restricted' or 'output-downscaled'
-          // Pre-fetch SD content.
-        }
       });
+
+      if (status === 'usable') {
+        // Pre-fetch HD content.
+      } else {  // such as 'output-restricted' or 'output-downscaled'
+        // Pre-fetch SD content.
+      }
     </pre>
   </div>
 </section>
