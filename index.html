@@ -1613,7 +1613,7 @@ requesting a key.</p>
      <section>
       <h3 class="heading settled" data-level="3.2" id="user-consent"><span class="secno">3.2. </span><span class="content"> User Consent </span><a class="self-link" href="#user-consent"></a></h3>
       <p> The fingerprinting concerns are mitigated by the fact that the API is
-        only accessible after <code>requestMediaKeySystemAccess()</code> was
+        only accessible after <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#navigator-extension:-requestmediakeysystemaccess()" id="ref-for-navigator-extension:-requestmediakeysystemaccess()">requestMediaKeySystemAccess()</a></code> was
         called, which may require user consent. UAs that would require user
         consent in order to access the CDM will therefore require user consent
         to access this API. </p>
@@ -1827,6 +1827,13 @@ requesting a key.</p>
     <li><a href="#ref-for-idl-def-MediaKeyStatus.output-restricted">2. MediaKeys extension</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-navigator-extension:-requestmediakeysystemaccess()">
+   <a href="https://www.w3.org/TR/encrypted-media/#navigator-extension:-requestmediakeysystemaccess()">https://www.w3.org/TR/encrypted-media/#navigator-extension:-requestmediakeysystemaccess()</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-navigator-extension:-requestmediakeysystemaccess()">3.2. 
+        User Consent </a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-idl-def-MediaKeyStatus.usable">
    <a href="https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyStatus.usable">https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyStatus.usable</a><b>Referenced in:</b>
    <ul>
@@ -1876,6 +1883,7 @@ requesting a key.</p>
      <li><span class="dfn-paneled" id="term-for-dom-mediakeystatus" style="color:initial">MediaKeyStatus</span>
      <li><span class="dfn-paneled" id="term-for-mediakeys-interface" style="color:initial">MediaKeys</span>
      <li><span class="dfn-paneled" id="term-for-idl-def-MediaKeyStatus.output-restricted" style="color:initial">output-restricted</span>
+     <li><span class="dfn-paneled" id="term-for-navigator-extension:-requestmediakeysystemaccess()" style="color:initial">requestMediaKeySystemAccess()</span>
      <li><span class="dfn-paneled" id="term-for-idl-def-MediaKeyStatus.usable" style="color:initial">usable</span>
     </ul>
    <li>
