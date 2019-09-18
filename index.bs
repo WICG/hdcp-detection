@@ -163,14 +163,14 @@ spec: encrypted-media; for: EME; urlPrefix: https://www.w3.org/TR/encrypted-medi
         by the page through the CDM. This information does not increase the
         fingerprint surface but can make it simpler for a website to fingerprint
         its users as the information is easier to access and no longer requires
-        getting a key from the CDM.
+        getting a content license from a license server.
       </p>
 
       <p>
         The information added by this API, regardless of whether or not it is
-        accessible in other ways does not increase the entropy for
-        fingerprinting much as HDCP is widely available on most operating
-        systems and displays.
+        accessible in other ways, does not increase the entropy for
+        fingerprinting much.  HDCP is widely available on most operating systems
+        and displays.
       </p>
     </section>
 
@@ -182,7 +182,7 @@ spec: encrypted-media; for: EME; urlPrefix: https://www.w3.org/TR/encrypted-medi
       <p>
         The fingerprinting concerns are mitigated by the fact that the API is
         only accessible after <code>requestMediaKeySystemAccess()</code> was
-        called which may require user consent. UAs that would require user
+        called, which may require user consent. UAs that would require user
         consent in order to access the CDM will therefore require user consent
         to access this API.
       </p>
