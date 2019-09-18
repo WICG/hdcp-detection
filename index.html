@@ -1213,7 +1213,7 @@ Possible extra rowspan handling
 	}
 </style>
   <link href="https://www.w3.org/StyleSheets/TR/2016/cg-draft" rel="stylesheet">
-  <meta content="Bikeshed version cb5a17652cb33dffd20b8b6a876bb811c1f749a9" name="generator">
+  <meta content="Bikeshed version eff3128ffb04502efdde84883f15c8da06b5b62a" name="generator">
   <link href="https://wicg.github.io/hdcp-detection/" rel="canonical">
 <style>/* style-md-lists */
 
@@ -1604,34 +1604,34 @@ requesting a key.</p>
         by the page through the CDM. This information does not increase the
         fingerprint surface but can make it simpler for a website to fingerprint
         its users as the information is easier to access and no longer requires
-        getting a key from the CDM. </p>
+        getting a content license from a license server. </p>
       <p> The information added by this API, regardless of whether or not it is
-        accessible in other ways does not increase the entropy for
-        fingerprinting much as HDCP is widely available on most operating
-        systems and displays. </p>
+        accessible in other ways, does not increase the entropy for
+        fingerprinting much.  HDCP is widely available on most operating systems
+        and displays. </p>
      </section>
      <section>
       <h3 class="heading settled" data-level="3.2" id="user-consent"><span class="secno">3.2. </span><span class="content"> User Consent </span><a class="self-link" href="#user-consent"></a></h3>
       <p> The fingerprinting concerns are mitigated by the fact that the API is
         only accessible after <code>requestMediaKeySystemAccess()</code> was
-        called which may require user consent. UAs that would require user
+        called, which may require user consent. UAs that would require user
         consent in order to access the CDM will therefore require user consent
         to access this API. </p>
      </section>
     </section>
     <section>
      <h2 class="heading settled" data-level="4" id="examples"><span class="secno">4. </span><span class="content">Examples</span><a class="self-link" href="#examples"></a></h2>
-     <div class="example" id="example-83a1a14b">
-      <a class="self-link" href="#example-83a1a14b"></a> 
-<pre class="highlight">video<c- p>.</c->mediaKeys<c- p>.</c->getStatusForPolicy<c- p>({</c->
+     <div class="example" id="example-6094d4ab">
+      <a class="self-link" href="#example-6094d4ab"></a> 
+<pre class="highlight"><c- kr>const</c-> status <c- o>=</c-> await video<c- p>.</c->mediaKeys<c- p>.</c->getStatusForPolicy<c- p>({</c->
   minHdcpVersion<c- o>:</c-> <c- t>'1.0'</c->
-<c- p>}).</c->then<c- p>(</c->status <c- p>=></c-> <c- p>{</c->
-  <c- k>if</c-> <c- p>(</c->status <c- o>===</c-> <c- t>'usable'</c-><c- p>)</c-> <c- p>{</c->
-    <c- c1>// Pre-fetch HD content.</c->
-  <c- p>}</c-> <c- k>else</c-> <c- p>{</c->  <c- c1>// such as 'output-restricted' or 'output-downscaled'</c->
-    <c- c1>// Pre-fetch SD content.</c->
-  <c- p>}</c->
 <c- p>});</c->
+
+<c- k>if</c-> <c- p>(</c->status <c- o>===</c-> <c- t>'usable'</c-><c- p>)</c-> <c- p>{</c->
+  <c- c1>// Pre-fetch HD content.</c->
+<c- p>}</c-> <c- k>else</c-> <c- p>{</c->  <c- c1>// such as 'output-restricted' or 'output-downscaled'</c->
+  <c- c1>// Pre-fetch SD content.</c->
+<c- p>}</c->
 </pre>
      </div>
     </section>
