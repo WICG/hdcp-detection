@@ -186,6 +186,7 @@ spec: encrypted-media; for: EME; urlPrefix: https://www.w3.org/TR/encrypted-medi
         consent in order to access the CDM will therefore require user consent
         to access this API.
       </p>
+    </section>
   </section>
 </section>
 
